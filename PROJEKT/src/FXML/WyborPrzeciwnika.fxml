@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: White;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gra.WyborPrzeciwnika">
+    <children>
+      <ImageView fitHeight="700.0" fitWidth="1000.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Tekstury/tlo.png" />
+         </image>
+      </ImageView>
+        <Label alignment="CENTER" layoutX="-2.0" layoutY="-1.0" prefHeight="200.0" prefWidth="1000.0" text="KÓŁKO I KRZYŻYK">
+            <font>
+                <Font name="Sitka Heading Bold Italic" size="80.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="57.0" fitWidth="59.0" layoutX="15.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Tekstury/cofnij.png" />
+            </image>
+        </ImageView>
+        <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#przyciskPowrot" opacity="0.0" prefHeight="57.0" prefWidth="59.0" />
+      <RadioButton fx:id="wyborKomputer" layoutX="399.0" layoutY="259.0" mnemonicParsing="false" onAction="#wyborKomputer" prefHeight="66.0" prefWidth="222.0" selected="true" text="vs Komputer">
+         <font>
+            <Font name="Sitka Display" size="24.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="wyborPrzeciwnik" layoutX="399.0" layoutY="363.0" mnemonicParsing="false" onAction="#wyborPrzeciwnik" prefHeight="66.0" prefWidth="222.0" text="vs Przeciwnik">
+         <font>
+            <Font name="Sitka Display" size="24.0" />
+         </font>
+      </RadioButton>
+      <Button layoutX="422.0" layoutY="469.0" mnemonicParsing="false" onAction="#przyciskPotwierdz" prefHeight="76.0" prefWidth="176.0" text="Potwierdź">
+         <font>
+            <Font name="Sitka Heading" size="25.0" />
+         </font>
+      </Button>
+    </children>
+</Pane>
